@@ -1,0 +1,71 @@
+/* Modern, clean, and responsive styles for UnderDevelopment */
+
+body {
+  font-family: 'Segoe UI', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: linear-gradient(120deg, #e0e7ff 0%, #f4f4f4 100%);
+  min-height: 100vh;
+}
+
+header {
+  background: #2563eb;
+  color: #fff;
+  padding: 32px 0 24px 0;
+  text-align: center;
+  border-radius: 0 0 18px 18px;
+  box-shadow: 0 4px 16px rgba(37,99,235,0.08);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+main {
+  margin: 40px auto 0 auto;
+  max-width: 600px;
+  width: 90%;
+}
+
+section {
+  background: #fff;
+  padding: 32px 28px;
+  border-radius: 14px;
+  box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+  margin-bottom: 24px;
+  transition: box-shadow 0.2s;
+}
+
+section:hover {
+  box-shadow: 0 6px 32px rgba(37,99,235,0.10);
+}
+
+h2 {
+  color: #2563eb;
+  margin-top: 0;
+  font-size: 1.5rem;
+}
+
+p {
+  color: #333;
+  line-height: 1.7;
+  font-size: 1.1rem;
+}
+
+@media (max-width: 700px) {
+  main {
+    max-width: 98%;
+    margin-top: 20px;
+  }
+  section {
+    padding: 18px 8px;
+  }
+  header {
+    padding: 22px 0 14px 0;
+  }
+  header h1 {
+    font-size: 1.5rem;
+  }
+}
