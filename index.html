@@ -29,6 +29,18 @@
       </div>
     </section>
 
+    <section id="camera-section">
+        <h2>Take a Picture</h2>
+        <video id="camera" autoplay playsinline></video>
+        <canvas id="snapshot" style="display:none;"></canvas>
+        <div id="camera-buttons">
+            <button id="start-camera">Start Camera</button>
+            <button id="take-picture" style="display:none;">Take Picture</button>
+        </div>
+        <img id="photo" alt="Your captured photo" style="display:none; width:100%; border-radius:8px; margin-top:12px;">
+    </section>
+
+
     <section id="results-section">
       <h2>Recipe Suggestions:</h2>
       <div id="recipes">
