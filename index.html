@@ -1,20 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>SmartChef</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <title>SmartChef</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header>
-        <h1>Welcome to SmartChef!</h1>
-    </header>
-    <main>
-        <section>
-            <h2>About</h2>
-            <p>This is a simple webpage template for your SmartChef project. Start building something awesome!</p>
-        </section>
-    </main>
+  <header>
+    <h1>Welcome to SmartChef!</h1>
+    <p>Upload a photo of your fridge — we’ll suggest recipes based on what you have 🍳</p>
+  </header>
+
+  <main>
+    <section id="upload-section">
+      <form id="upload-form" enctype="multipart/form-data">
+        <label for="file">Take or upload a photo:</label><br>
+        <input type="file" id="file" name="file" accept="image/*" capture="environment" required>
+        <button type="submit">Generate Recipes</button>
+      </form>
+
+      <div id="preview-container">
+        <img id="preview" src="" alt="Image preview" style="display:none;">
+      </div>
+
+      <div id="loading" style="display:none;">
+        <p>Analyzing your image... please wait ⏳</p>
+      </div>
+    </section>
+
+    <section id="results-section">
+      <h2>Recipe Suggestions:</h2>
+      <div id="recipes">
+        <p>Your recipe results will appear here.</p>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
