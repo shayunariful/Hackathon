@@ -120,6 +120,11 @@ uploadForm.addEventListener("submit", async (e) => {
     // Re-enable the button
     submitBtn.disabled = false;
   }
+  fileInput.value = "";
+  photo.src = "";
+  photo.style.display = "none";
+  preview.src = "";
+  preview.style.display = "none";
 });
 
 function displayRecipe(recipe) {
