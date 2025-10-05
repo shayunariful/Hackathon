@@ -75,5 +75,18 @@ def detect_from_camera():
     cap.release()
     cv2.destroyAllWindows()
 
+def detect_foods(image_path: str):
+    results = model(image_path, verbose=False)
+    names = model.names
+    detected = set()
+    for r in results:
+        for box in r.boxes:
+            cls = int(box.cls)
+            label = names[cls]
+            if label in FOOD_CLASSES:
+                detected.add(label)
+    return list(detected)
+
 if __name__ == "__main__":
     detect_from_camera()
+
