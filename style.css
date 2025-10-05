@@ -159,3 +159,30 @@ button:hover {
     font-size: 1.8rem;
   }
 }
+
+/* === Camera & Snapshot === */
+#camera {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  margin: 12px auto;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+}
+
+#snapshot {
+  display: none;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 12px;
+}
+
+#photo {
+  display: none;
+  width: 100%;
+  max-width: 100%;
+  border-radius: 10px;
+  margin-top: 12px;
+}
+
