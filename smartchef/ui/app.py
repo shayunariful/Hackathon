@@ -10,10 +10,8 @@ from pydantic import BaseModel
 from smartchef.edge.detector import detect_foods
 
 # import your gemini file, no matter its folder name
-try:
-    from llm.gemini_generator import generate_recipe_gemini  # your path
-except Exception:
-    from smartchef.gemini_generator import generate_recipe_gemini  # fallback if you move it
+from smartchef.api.gemini_generator import generate_recipe_gemini
+
 
 app = FastAPI(title="SmartChef API")
 
