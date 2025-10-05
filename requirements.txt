@@ -2,3 +2,11 @@ for the environment
 
 pip install ultralytics opencv-python torch numpy
 pip install pydantic python-dotenv google-generativeai
+
+py --version  (make sure u have python installed)
+py -m venv .venv
+.venv\Scripts\activate
+
+once your environment is activated just run the code:
+
+ python edge/detector.py   
