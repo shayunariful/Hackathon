@@ -23,21 +23,28 @@ Simply take or upload a photo of your fridge or ingredients, and SmartChef will 
 Hackathon/
 │
 ├── smartchef/
-│ ├── api/
-│ │ ├── gemini_generator.py # Handles Gemini recipe generation
-│ │ └── test_key.py # API key test file
-│ │
-│ ├── edge/
-│ │ └── detector.py # YOLOv8 food detection logic
-│ │
-│ ├── ui/
-│ │ └── app.py # FastAPI app (main backend entrypoint)
-│ │
-│ └── cloud/
-│ └── sample_recipes.csv # Local fallback recipe database
+│   ├── api/
+│   │   ├── gemini_generator.py       # Handles Gemini recipe generation
+│   │   └── test_key.py               # API key test file
+│   │
+│   ├── edge/
+│   │   └── detector.py               # YOLOv8 food detection logic
+│   │
+│   ├── ui/
+│   │   └── app.py                    # FastAPI app (main backend entrypoint)
+│   │
+│   └── cloud/
+│       └── sample_recipes.csv        # Local fallback recipe database
 │
-├── index.html # Web interface
-├── script.js # Handles camera + API requests
-├── style.css # Styling
-├── requirements.txt # Python dependencies
-└── README.md # You are here 🙂
+├── index.html                        # Web interface
+├── script.js                         # Handles camera + API requests
+├── style.css                         # Styling
+├── requirements.txt                  # Python dependencies
+└── README.md                         # You are here 🙂
+
+
+## Contributors
+Tyler Lee - AI & Backend Integration, Full stack
+Ahriful Shayun - Frontend, Testing
+Bryce Wong - Frontend & Web Design
+Saffat Uddin - Frontend & Web Design
