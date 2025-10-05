@@ -1,0 +1,4 @@
+for the environment
+
+pip install ultralytics opencv-python torch numpy
+pip install pydantic python-dotenv google-generativeai
