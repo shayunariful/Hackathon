@@ -10,11 +10,12 @@ from ultralytics import YOLO
 sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 from api.gemini_generator import generate_recipe_gemini  # ✅ import your Gemini generator
 
-def load_food_classes(path="smartchef/edge/food_classes.txt"):
-    with open(path, "r", encoding="utf-8") as f:
-        return {line.strip().lower() for line in f if line.strip()}
-
-FOOD_CLASSES = load_food_classes()
+FOOD_CLASSES = {
+    "apple", "banana", "orange", "broccoli", "carrot", "sandwich", "pizza",
+    "cake", "hot dog", "donut", "cupcake", "bowl", "spoon", "fork", "knife",
+    "bottle", "wine glass", "cup", "spoon", "bowl", "food", "bread", "cheese",
+    "tomato", "fruit", "vegetable", "salad", "egg", "steak", "burger"
+}
 
 # Load YOLOv8 Nano model (fastest lightweight version)
 model = YOLO("yolov8n.pt")
