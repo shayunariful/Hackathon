@@ -18,7 +18,11 @@ app = FastAPI(title="SmartChef API")
 # CORS: start permissive; tighten later
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["*"],   # later: set to your GitHub Pages & .tech
+    allow_origins=[
+        "https://smartchefapp.tech",
+        "https://shayunariful.github.io",
+        "*",  # optional fallback
+    ],
     allow_methods=["*"],
     allow_headers=["*"],
 )
@@ -79,3 +83,5 @@ class AIReq(BaseModel):
 def ai_recipe(body: AIReq):
     recipe = generate_recipe_gemini(body.items, body.prefs or {})
     return {"recipe": recipe}
+
+

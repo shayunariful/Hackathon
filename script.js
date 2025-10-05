@@ -60,7 +60,11 @@ const loading = document.getElementById("loading");
 const submitBtn = uploadForm.querySelector("button");
 
 // Change this depending on your environment
-const BACKEND_URL = "http://127.0.0.1:8000"; // Local testing
+const BACKEND_URL =
+  window.location.hostname.includes("localhost") ||
+  window.location.hostname.includes("127.0.0.1")
+    ? "http://127.0.0.1:8000"
+    : "https://smartchef-gw8c.onrender.com";
 // const BACKEND_URL = "https://api.smartchefapp.tech"; // Production
 
 uploadForm.addEventListener("submit", async (e) => {
