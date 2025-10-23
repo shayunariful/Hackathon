@@ -45,6 +45,6 @@ Hackathon/
 
 ## Contributors
 Tyler Lee - AI & Backend Integration, Full stack
-Ahriful Shayun - Frontend, Testing
+Ariful Shayun - Frontend, Testing
 Bryce Wong - Frontend & Web Design
 Saffat Uddin - Frontend & Web Design
